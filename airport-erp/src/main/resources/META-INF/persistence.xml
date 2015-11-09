@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="airport-erp">
+		<jta-data-source>java:/didonDS</jta-data-source>
+		<class>entities.Car</class>
+		<class>entities.CarBooking</class>
+		<class>entities.CarBookingId</class>
+		<class>entities.CarRentalAgency</class>
+		<class>entities.Employee</class>
+		<class>entities.Flight</class>
+		<class>entities.Meal</class>
+		<class>entities.Passenger</class>
+		<class>entities.Provider</class>
+		<class>entities.Ticket</class>
+		<class>entities.TicketID</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
